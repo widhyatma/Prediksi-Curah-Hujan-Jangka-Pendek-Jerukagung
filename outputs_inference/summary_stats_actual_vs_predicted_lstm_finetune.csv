@@ -1,0 +1,6 @@
+Parameter Statistik,Data Aktual AWS,LSTM (Pre-Trained),LSTM (Fine-Tuned)
+Rata-rata Curah Hujan (mm/jam),0.203,0.201,0.14
+Maksimum Curah Hujan (mm/jam),16.8,15.811,5.259
+Total Akumulasi Hujan (mm),267.6,264.929,184.532
+Standar Deviasi (mm/jam),1.195,1.005,0.491
+Jumlah Jam Terdeteksi Hujan (N),146.0,122.0,139.0

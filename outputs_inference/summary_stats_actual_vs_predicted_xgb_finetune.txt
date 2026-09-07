@@ -1,0 +1,6 @@
+            Parameter Statistik  Data Aktual AWS  XGBoost (Pre-Trained)  XGBoost (Fine-Tuned)
+ Rata-rata Curah Hujan (mm/jam)            0.203                  0.182                 0.176
+  Maksimum Curah Hujan (mm/jam)           16.800                  7.848                 6.638
+     Total Akumulasi Hujan (mm)          267.600                239.883               231.988
+       Standar Deviasi (mm/jam)            1.195                  0.829                 0.753
+Jumlah Jam Terdeteksi Hujan (N)          146.000                124.000                95.000

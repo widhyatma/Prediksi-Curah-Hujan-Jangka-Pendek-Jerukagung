@@ -1,0 +1,94 @@
+# Laporan Evaluasi Model Prediksi Curah Hujan Akumulasi 1-Jam
+        
+## Deskripsi Model
+Framework ini membangun arsitektur dua tahap (*Two-Stage Model*) untuk memprediksi curah hujan akumulasi 1-jam.
+Tahap pertama mengklasifikasikan kejadian hujan (P(Hujan) >= 0.2 mm), kemudian tahap kedua (regresi) menebak nilai intensitas untuk wilayah yang diklasifikasikan hujan.
+**Algoritma Inti:** XGBoost (Fine-Tuned)
+
+## Jumlah Data
+- **Jumlah Data Latih**: 9097
+- **Jumlah Data Validasi**: 1896
+- **Jumlah Data Uji**: 1321
+
+## Daftar Variabel
+- temperature
+- humidity
+- dewpoint
+- rainrate
+- pressure
+- era5_u_wind
+- era5_v_wind
+- era5_cloud_cover
+- era5_cape
+- era5_tcwv
+- era5_moisture_div
+- era5_direct_rad
+- era5_sunshine
+- temperature_tendency_1h
+- dewpoint_tendency_1h
+- pressure_tendency_1h
+- dewpoint_depression
+- sin_hour
+- cos_hour
+- sin_month
+- cos_month
+- sin_doy
+- cos_doy
+- rainrate_lag_1h
+- rainrate_lag_3h
+- rainrate_lag_6h
+- rainrate_lag_12h
+- rainrate_lag_24h
+- temperature_lag_1h
+- temperature_lag_3h
+- temperature_lag_6h
+- temperature_lag_12h
+- temperature_lag_24h
+- humidity_lag_1h
+- humidity_lag_3h
+- humidity_lag_6h
+- humidity_lag_12h
+- humidity_lag_24h
+- pressure_lag_1h
+- pressure_lag_3h
+- pressure_lag_6h
+- pressure_lag_12h
+- pressure_lag_24h
+- dewpoint_lag_1h
+- dewpoint_lag_3h
+- dewpoint_lag_6h
+- dewpoint_lag_12h
+- dewpoint_lag_24h
+- era5_cloud_cover_lag_1h
+- era5_cloud_cover_lag_3h
+- era5_cloud_cover_lag_6h
+- era5_cloud_cover_lag_12h
+- era5_cloud_cover_lag_24h
+
+## Hasil Klasifikasi
+- Accuracy: 0.9099
+- Precision: 0.6134
+- Recall: 0.5000
+- F1 Score: 0.5509
+- ROC-AUC: 0.8239
+- PR-AUC: 0.5307
+- Brier Score (Uncalibrated): 0.0697
+- Brier Score (Calibrated): 0.0863
+
+## Hasil Metrik Meteorologi
+- CSI (Critical Success Index): 0.3802
+- POD (Probability of Detection): 0.5000
+- FAR (False Alarm Ratio): 0.3866
+- ETS (Equitable Threat Score): 0.3346
+- HSS (Heidke Skill Score): 0.5015
+
+## Hasil Regresi
+*(Dihitung eksklusif pada sampel aktual yang mengalami hujan)*
+- RMSE (Root Mean Squared Error): 3.0052 mm
+- MAE (Mean Absolute Error): 1.6533 mm
+- R² (Koefisien Determinasi): 0.0888
+- Bias: 0.0591
+- Correlation: 0.3172
+
+## Analisis Feature Importance
+*Silakan merujuk ke folder `figures/` untuk melihat visualisasi SHAP dan diagram kepentingan fitur (Feature Importance) terhadap prediksi model.*

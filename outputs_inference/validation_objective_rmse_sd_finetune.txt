@@ -1,0 +1,5 @@
+              Model / Varian  Aktual Mean (mm)  Aktual SD (mm)  MAE (mm/jam) NMAE Range (%)  RMSE (mm/jam) NRMSE Range (%)  Rasio RMSE/SD Status Kelayakan (RMSE < SD) Relative MAE (%)
+XGBoost (Pre-Trained) on AWS             0.203           1.195         0.244          1.45%          1.139           6.78%         0.9535            LULUS (RMSE < SD)          120.52%
+ XGBoost (Fine-Tuned) on AWS             0.203           1.195         0.246          1.46%          1.129           6.72%         0.9448            LULUS (RMSE < SD)          121.32%
+   LSTM (Pre-Trained) on AWS             0.203           1.195         0.263          1.56%          1.187           7.06%         0.9931            LULUS (RMSE < SD)          129.54%
+    LSTM (Fine-Tuned) on AWS             0.203           1.195         0.213          1.27%          1.086           6.46%         0.9085            LULUS (RMSE < SD)          104.97%

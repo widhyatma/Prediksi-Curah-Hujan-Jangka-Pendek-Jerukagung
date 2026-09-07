@@ -1,0 +1,23 @@
+                                Metrik XGBoost (Pre-Trained) LSTM (Pre-Trained)
+                Total Data Samples (N)                 17513              17513
+   Rain Samples (Positive Class Count)                  5553               5553
+Positive Class Ratio (PR-AUC Baseline)       0.3171 (31.71%)    0.3171 (31.71%)
+               Classification Accuracy              0.967852           0.965397
+               Classification F1-Score              0.947564           0.943034
+              Classification Precision              0.981289           0.986431
+                 Classification Recall              0.916081           0.903296
+            Frequency Bias Index (FBI)              0.933549           0.915721
+                               ROC-AUC              0.986308           0.986537
+                                PR-AUC              0.980415           0.981021
+          CSI (Critical Success Index)              0.900354           0.892209
+        POD (Probability of Detection)              0.916081           0.903296
+               FAR (False Alarm Ratio)              0.018711           0.013569
+          ETS (Equitable Threat Score)               0.85947           0.848865
+              HSS (Heidke Skill Score)              0.924425           0.918255
+          Regression RMSE (Rainy only)              0.263886           0.220028
+           Regression MAE (Rainy only)              0.127516           0.117831
+            NRMSE Range % (Rainy only)                 1.77%              1.47%
+            Rasio RMSE/SD (Rainy only)                0.2652             0.2211
+            Regression R2 (Rainy only)              0.931095           0.953093
+                       Regression Bias             -0.028152          -0.043971
+                   Pearson Correlation              0.964933           0.976265

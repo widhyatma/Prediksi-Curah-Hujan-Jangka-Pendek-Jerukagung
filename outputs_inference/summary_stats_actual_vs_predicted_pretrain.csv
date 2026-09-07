@@ -1,0 +1,6 @@
+Parameter Statistik,Data Aktual GSMaP,XGBoost (Pre-Trained),LSTM (Pre-Trained)
+Rata-rata Curah Hujan (mm/jam),0.312,0.305,0.299
+Maksimum Curah Hujan (mm/jam),15.147,9.683,15.564
+Total Akumulasi Hujan (mm),5468.917,5345.156,5245.036
+Standar Deviasi (mm/jam),0.724,0.711,0.703
+Jumlah Jam Terdeteksi Hujan (N),5553.0,5184.0,5085.0

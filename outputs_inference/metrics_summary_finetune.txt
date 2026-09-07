@@ -1,0 +1,23 @@
+                                Metrik XGBoost (Pre-Trained) on AWS XGBoost (Fine-Tuned) on AWS LSTM (Pre-Trained) on AWS LSTM (Fine-Tuned) on AWS
+                Total Data Samples (N)                         1320                        1320                      1320                     1320
+   Rain Samples (Positive Class Count)                          146                         146                       146                      146
+Positive Class Ratio (PR-AUC Baseline)              0.1106 (11.06%)             0.1106 (11.06%)           0.1106 (11.06%)          0.1106 (11.06%)
+               Classification Accuracy                     0.910606                    0.917424                  0.910606                 0.917424
+               Classification F1-Score                     0.562963                    0.547718                  0.559701                 0.617544
+              Classification Precision                     0.612903                    0.694737                  0.614754                 0.633094
+                 Classification Recall                     0.520548                    0.452055                  0.513699                  0.60274
+            Frequency Bias Index (FBI)                     0.849315                    0.650685                  0.835616                 0.952055
+                               ROC-AUC                     0.808698                     0.83358                  0.771058                 0.867433
+                                PR-AUC                     0.522766                    0.529401                   0.52766                 0.594247
+          CSI (Critical Success Index)                     0.391753                    0.377143                  0.388601                 0.446701
+        POD (Probability of Detection)                     0.520548                    0.452055                  0.513699                  0.60274
+               FAR (False Alarm Ratio)                     0.387097                    0.305263                  0.385246                 0.366906
+          ETS (Equitable Threat Score)                      0.34548                    0.337356                  0.342641                 0.399865
+              HSS (Heidke Skill Score)                     0.513542                    0.504511                  0.510398                 0.571291
+          Regression RMSE (Rainy only)                     3.277704                    3.239905                  3.428711                 3.185695
+           Regression MAE (Rainy only)                     1.786522                    1.825968                  1.931003                 1.530375
+            NRMSE Range % (Rainy only)                       19.86%                      19.64%                    20.78%                   19.31%
+            Rasio RMSE/SD (Rainy only)                       1.0376                      1.0256                    1.0854                   1.0084
+            Regression R2 (Rainy only)                     0.079896                    0.065971                  0.095049                 0.073236
+                       Regression Bias                     -0.61236                   -0.641539                 -0.461513                -0.962471
+                   Pearson Correlation                     0.282658                    0.256847                    0.3083                 0.270621

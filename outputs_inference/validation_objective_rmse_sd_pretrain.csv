@@ -1,0 +1,3 @@
+Model / Varian,Aktual Mean (mm),Aktual SD (mm),MAE (mm/jam),NMAE Range (%),RMSE (mm/jam),NRMSE Range (%),Rasio RMSE/SD,Status Kelayakan (RMSE < SD),Relative MAE (%)
+XGBoost (Pre-Trained),0.312,0.724,0.042,0.28%,0.151,1.00%,0.2092,LULUS (RMSE < SD),13.54%
+LSTM (Pre-Trained),0.312,0.724,0.039,0.25%,0.125,0.83%,0.1731,LULUS (RMSE < SD),12.34%

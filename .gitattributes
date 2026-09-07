@@ -1,0 +1,9 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Git LFS tracking for large datasets and heavy archives
+Data_Satelit/*.csv filter=lfs diff=lfs merge=lfs -text
+Data_Satelit/*.xlsx filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+results_lstm/**/*.keras filter=lfs diff=lfs merge=lfs -text
+results_xgboost/**/*.pkl filter=lfs diff=lfs merge=lfs -text

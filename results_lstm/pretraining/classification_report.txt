@@ -1,0 +1,64 @@
+# Laporan Evaluasi Model Prediksi Curah Hujan Akumulasi 1-Jam
+        
+## Deskripsi Model
+Framework ini membangun arsitektur dua tahap (*Two-Stage Model*) untuk memprediksi curah hujan akumulasi 1-jam.
+Tahap pertama mengklasifikasikan kejadian hujan (P(Hujan) >= 0.2 mm), kemudian tahap kedua (regresi) menebak nilai intensitas untuk wilayah yang diklasifikasikan hujan.
+**Algoritma Inti:** LSTM (Pre-Trained)
+
+## Jumlah Data
+- **Jumlah Data Latih**: 9074
+- **Jumlah Data Validasi**: 1873
+- **Jumlah Data Uji**: 17491
+
+## Daftar Variabel
+- temperature
+- humidity
+- dewpoint
+- rainrate
+- pressure
+- era5_u_wind
+- era5_v_wind
+- era5_cloud_cover
+- era5_cape
+- era5_tcwv
+- era5_moisture_div
+- era5_direct_rad
+- era5_sunshine
+- temperature_tendency_1h
+- dewpoint_tendency_1h
+- pressure_tendency_1h
+- dewpoint_depression
+- sin_hour
+- cos_hour
+- sin_month
+- cos_month
+- sin_doy
+- cos_doy
+
+## Hasil Klasifikasi
+- Accuracy: 0.9654
+- Precision: 0.9864
+- Recall: 0.9033
+- F1 Score: 0.9430
+- ROC-AUC: 0.9866
+- PR-AUC: 0.9811
+- Brier Score (Uncalibrated): 0.0278
+- Brier Score (Calibrated): 0.0275
+
+## Hasil Metrik Meteorologi
+- CSI (Critical Success Index): 0.8922
+- POD (Probability of Detection): 0.9033
+- FAR (False Alarm Ratio): 0.0136
+- ETS (Equitable Threat Score): 0.8488
+- HSS (Heidke Skill Score): 0.9182
+
+## Hasil Regresi
+*(Dihitung eksklusif pada sampel aktual yang mengalami hujan)*
+- RMSE (Root Mean Squared Error): 0.1970 mm
+- MAE (Mean Absolute Error): 0.0960 mm
+- R² (Koefisien Determinasi): 0.9609
+- Bias: -0.0137
+- Correlation: 0.9806
+
+## Analisis Feature Importance
+*Silakan merujuk ke folder `figures/` untuk melihat visualisasi SHAP dan diagram kepentingan fitur (Feature Importance) terhadap prediksi model.*
