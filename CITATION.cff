@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, dataset, or research framework in your work, please cite it using the metadata below."
-title: "Prediksi Curah Hujan Jangka Pendek Jerukagung: Two-Stage Hurdle Transfer Learning Framework for Hourly Precipitation Prediction"
+title: "Prediksi Curah Hujan Jangka Pendek Jerukagung: Two-Stage Hurdle Transfer Learning Framework for Hourly Precipitation Prediction (Companion Code & Dataset for Thesis: Analisis Komparatif Performa Model XGBoost dan LSTM dalam Prediksi Curah Hujan Jangka Pendek - Studi Kasus: Desa Jerukagung, Klirong, Kebumen)"
 type: software
 authors:
   - family-names: Widhyatma
