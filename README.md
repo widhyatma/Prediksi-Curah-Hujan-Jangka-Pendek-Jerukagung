@@ -196,4 +196,4 @@ python model-ltsm-final.py
 ## 📜 Lisensi & Atribusi
 
 Proyek ini dilisensikan di bawah lisensi MIT.
-Pengembangan dan data stasiun cuaca didukung oleh **Stasiun Klimatologi Jerukagung, Kebumen** dan data satelit/reanalisis terbuka dari **Copernicus ECMWF (ERA5)**, **JAXA (GSMaP)**, dan **NASA (GPM IMERG)**.
+Pengembangan dan data stasiun cuaca didukung data satelit data reanalisis terbuka dari **Copernicus ECMWF (ERA5)**, **JAXA (GSMaP)**, dan **NASA (GPM IMERG)**.
