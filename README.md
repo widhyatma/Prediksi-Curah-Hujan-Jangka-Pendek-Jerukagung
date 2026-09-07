@@ -93,8 +93,8 @@ Rainfall_Satellite_DeepLearning/
 │
 ├── model-xgboost-final.py              # Skrip pelatihan Pre-Training & Fine-Tuning XGBoost
 ├── model-xgboost-final.ipynb           # Notebook interaktif pelatihan model XGBoost
-├── model-ltsm-final.py                 # Skrip pelatihan Pre-Training & Fine-Tuning BiLSTM
-├── model-ltsm-final.ipynb              # Notebook interaktif pelatihan model BiLSTM
+├── model-ltsm-final.py                 # Skrip pelatihan Pre-Training & Fine-Tuning LSTM
+├── model-ltsm-final.ipynb              # Notebook interaktif pelatihan model LSTM
 │
 ├── analisis_data_atmosfer.ipynb        # Analisis tren iklim 20 tahun & validasi sensor vs AWS IoT
 ├── fine_tuning_pipeline.ipynb          # Pipeline fine-tuning domain adaptation satelit -> AWS
@@ -106,9 +106,9 @@ Rainfall_Satellite_DeepLearning/
 ├── RELEASE_NOTES.md                    # Catatan rilis resmi v1.0.0
 │
 ├── results_xgboost/                    # Bobot model terlatih, kalibrator, & scaler XGBoost
-├── results_lstm/                       # Bobot model terlatih, checkpoint keras, & scaler BiLSTM
+├── results_lstm/                       # Bobot model terlatih, checkpoint keras, & scaler LSTM
 ├── results_xgboost.zip                 # Arsip terkompresi hasil & bobot XGBoost
-├── results_lstm.zip                    # Arsip terkompresi hasil & bobot BiLSTM
+├── results_lstm.zip                    # Arsip terkompresi hasil & bobot LSTM
 │
 └── outputs_inference/                  # Luaran visualisasi publikasi & tabel metrik inferensi
     ├── figures/                        # 28+ Grafik resolusi tinggi (PNG)
@@ -185,7 +185,7 @@ jupyter notebook inference_pipeline.ipynb
 ```
 
 ### 3. Menjalankan Adaptasi Domain (Fine-Tuning)
-Untuk melatih ulang model XGBoost dan BiLSTM pada data ground truth AWS lokal:
+Untuk melatih ulang model XGBoost dan LSTM pada data ground truth AWS lokal:
 ```bash
 jupyter notebook fine_tuning_pipeline.ipynb
 ```
@@ -195,7 +195,7 @@ jupyter notebook fine_tuning_pipeline.ipynb
 # Pelatihan Model Tree-Based (XGBoost dengan Optuna HPO)
 python model-xgboost-final.py
 
-# Pelatihan Model Deep Learning (BiLSTM Dua Tahap Hurdle)
+# Pelatihan Model Deep Learning (LSTM Dua Tahap Hurdle)
 python model-ltsm-final.py
 ```
 

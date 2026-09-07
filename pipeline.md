@@ -37,7 +37,7 @@ flowchart TD
 
     subgraph S4["4. Dual Model & Transfer Learning"]
         E3 --> F1["Model A: Tree-Based XGBoost\n- Optuna HPO Dynamic Search\n- Warm-Start Fine-Tuning"]
-        E3 --> F2["Model B: Deep Learning BiLSTM\n- Input: Sliding Window 24 Jam\n- Layer Freezing & Top Retraining"]
+        E3 --> F2["Model B: Deep Learning LSTM\n- Input: Sliding Window 24 Jam\n- Layer Freezing & Top Retraining"]
     end
 
     subgraph S5["5. Comprehensive Evaluation & Inference"]

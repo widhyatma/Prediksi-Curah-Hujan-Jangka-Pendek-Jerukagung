@@ -19,7 +19,7 @@ keywords:
   - "transfer learning"
   - "domain adaptation"
   - "xgboost"
-  - "bilstm"
+  - "lstm"
   - "era5 reanalysis"
   - "gsmap satellite"
   - "nasa imerg"
