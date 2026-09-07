@@ -8,6 +8,7 @@ authors:
     email: evanalifwidhyatma@gmail.com
     affiliation: "Stasiun Klimatologi Jerukagung, Kebumen"
 version: 1.0.0
+doi: 10.5281/zenodo.22642472
 date-released: 2026-09-07
 repository-code: "https://github.com/widhyatma/Prediksi-Curah-Hujan-Jangka-Pendek-Jerukagung"
 license: MIT

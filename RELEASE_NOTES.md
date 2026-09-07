@@ -6,6 +6,7 @@
 **Repository:** [https://github.com/widhyatma/Prediksi-Curah-Hujan-Jangka-Pendek-Jerukagung](https://github.com/widhyatma/Prediksi-Curah-Hujan-Jangka-Pendek-Jerukagung)  
 **Author:** Evan Alif Widhyatma  
 **License:** MIT License  
+**Zenodo DOI:** [10.5281/zenodo.22642472](https://doi.org/10.5281/zenodo.22642472)  
 
 ---
 

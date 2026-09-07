@@ -1,6 +1,6 @@
 # 🛰️ Rainfall Satellite Deep Learning & Domain Adaptation Pipeline
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22642472.svg)](https://doi.org/10.5281/zenodo.22642472)
 [![Release](https://img.shields.io/badge/Release-v1.0.0-blue.svg?logo=github&logoColor=white)](https://github.com/widhyatma/Prediksi-Curah-Hujan-Jangka-Pendek-Jerukagung/releases/tag/v1.0.0)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15%2B-FF6F00.svg?logo=tensorflow&logoColor=white)](https://tensorflow.org/)
@@ -216,13 +216,13 @@ Jika Anda menggunakan perangkat lunak, dataset, atau kerangka kerja pemodelan in
   year         = 2026,
   publisher    = {Zenodo},
   version      = {v1.0.0},
-  doi          = {10.5281/zenodo.XXXXXXX},
+  doi          = {10.5281/zenodo.22642472},
   url          = {https://github.com/widhyatma/Prediksi-Curah-Hujan-Jangka-Pendek-Jerukagung}
 }
 ```
 
 ### Format APA:
-> Widhyatma, E. A. (2026). *Prediksi Curah Hujan Jangka Pendek Jerukagung: Two-Stage Hurdle Transfer Learning Framework for Hourly Precipitation Prediction* (Version v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+> Widhyatma, E. A. (2026). *Prediksi Curah Hujan Jangka Pendek Jerukagung: Two-Stage Hurdle Transfer Learning Framework for Hourly Precipitation Prediction* (Version v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22642472
 
 Metadata sitasi lengkap juga tersedia dalam format standar [CITATION.cff](CITATION.cff) dan [.zenodo.json](.zenodo.json).
 
