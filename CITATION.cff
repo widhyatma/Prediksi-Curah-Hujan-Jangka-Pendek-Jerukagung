@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, dataset, or research framework in your work, please cite it using the metadata below."
+title: "Prediksi Curah Hujan Jangka Pendek Jerukagung: Two-Stage Hurdle Transfer Learning Framework for Hourly Precipitation Prediction"
+type: software
+authors:
+  - family-names: Widhyatma
+    given-names: Evan Alif
+    email: evanalifwidhyatma@gmail.com
+    affiliation: "Stasiun Klimatologi Jerukagung, Kebumen"
+version: 1.0.0
+date-released: 2026-09-07
+repository-code: "https://github.com/widhyatma/Prediksi-Curah-Hujan-Jangka-Pendek-Jerukagung"
+license: MIT
+keywords:
+  - "rainfall prediction"
+  - "precipitation forecasting"
+  - "two-stage hurdle model"
+  - "transfer learning"
+  - "domain adaptation"
+  - "xgboost"
+  - "bilstm"
+  - "era5 reanalysis"
+  - "gsmap satellite"
+  - "nasa imerg"
+  - "aws iot weather station"
+  - "hydrometeorology"
+  - "google earth engine"
+abstract: >-
+  A scientific open-source research framework for short-term hourly rainfall prediction using
+  a Two-Stage Hurdle Transfer Learning architecture. The system integrates macro-scale atmospheric
+  reanalysis (Copernicus ERA5) and satellite precipitation observations (JAXA GSMaP NRT and NASA GPM IMERG)
+  with micro-scale ground truth telemetry from an automated AWS IoT weather station (Jerukagung, Kebumen,
+  Central Java, Indonesia). The modeling pipeline features two complementary paradigms: an Optuna-optimized
+  Tree-based XGBoost model and a 24-hour diurnal-lookback BiDirectional LSTM deep learning network,
+  calibrated via isotonic regression and evaluated across comprehensive classification, regression,
+  and cumulative water-balance metrics.

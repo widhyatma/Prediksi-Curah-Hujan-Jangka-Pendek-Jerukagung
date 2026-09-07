@@ -1,0 +1,29 @@
+{
+  "title": "Prediksi Curah Hujan Jangka Pendek Jerukagung: Two-Stage Hurdle Transfer Learning Framework for Hourly Precipitation Prediction",
+  "upload_type": "software",
+  "description": "<p><strong>Prediksi-Curah-Hujan-Jangka-Pendek-Jerukagung</strong> is an open-source scientific research software and dataset framework for short-term hourly precipitation prediction in Jerukagung, Kebumen, Central Java, Indonesia.</p><p>The framework integrates Copernicus ERA5 atmospheric reanalysis, JAXA GSMaP NRT and NASA GPM IMERG satellite precipitation observations with localized ground truth from an automated weather station (AWS IoT). The modeling architecture uses a <strong>Two-Stage Hurdle Transfer Learning</strong> approach combining binary rain occurrence classification (P &ge; 0.2 mm/h) with conditional intensity regression, deployed across both Tree-Based (XGBoost with Optuna HPO) and Deep Learning (BiDirectional LSTM with 24-hour diurnal lookback) models.</p><p>Key Features:</p><ul><li>Google Earth Engine (GEE) JavaScript extraction scripts for ERA5, GSMaP, and IMERG.</li><li>Harmonized 1-hour time-series datasets across satellite and ground station domains.</li><li>Two-stage hurdle modeling addressing severe zero-inflation (&gt;85% non-rain hours).</li><li>Cross-domain transfer learning / fine-tuning with dynamic probability calibration.</li><li>Comprehensive multi-metric benchmarking (Precision, Recall, F1, ROC-AUC, PR-AUC, MAE, RMSE, R&sup2;, CSI, and Cumulative Water Balance).</li></ul>",
+  "creators": [
+    {
+      "name": "Widhyatma, Evan Alif",
+      "affiliation": "Stasiun Klimatologi Jerukagung, Kebumen"
+    }
+  ],
+  "access_right": "open",
+  "license": "mit",
+  "keywords": [
+    "rainfall prediction",
+    "precipitation forecasting",
+    "two-stage hurdle model",
+    "transfer learning",
+    "domain adaptation",
+    "xgboost",
+    "bilstm",
+    "era5",
+    "gsmap",
+    "imerg",
+    "aws iot",
+    "hydrometeorology",
+    "google earth engine"
+  ],
+  "notes": "First official scientific release (v1.0.0) accompanying the research on short-term rainfall forecasting and satellite-ground station domain adaptation."
+}

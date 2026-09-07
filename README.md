@@ -1,11 +1,13 @@
 # 🛰️ Rainfall Satellite Deep Learning & Domain Adaptation Pipeline
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![Release](https://img.shields.io/badge/Release-v1.0.0-blue.svg?logo=github&logoColor=white)](https://github.com/widhyatma/Prediksi-Curah-Hujan-Jangka-Pendek-Jerukagung/releases/tag/v1.0.0)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15%2B-FF6F00.svg?logo=tensorflow&logoColor=white)](https://tensorflow.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-2.0%2B-EB5424.svg?logo=xgboost&logoColor=white)](https://xgboost.ai/)
 [![Google Earth Engine](https://img.shields.io/badge/GEE-Javascript%20API-34A853.svg?logo=googleearthengine&logoColor=white)](https://earthengine.google.com/)
 [![Git LFS](https://img.shields.io/badge/Git%20LFS-Enabled-orange.svg?logo=git-lfs&logoColor=white)](https://git-lfs.github.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Repositori ini menyajikan kerangka kerja komprehensif untuk **prediksi curah hujan jam-jaman (*hourly precipitation prediction*)** menggunakan pendekatan **Two-Stage Hurdle Transfer Learning**. Sistem mengintegrasikan reanalisis atmosfer makro (**ERA5**), estimasi presipitasi satelit (**GSMaP NRT** & **NASA IMERG**), serta data *ground truth* stasiun cuaca mikro (**AWS IoT Jerukagung, Kebumen**).
 
@@ -94,8 +96,14 @@ Rainfall_Satellite_DeepLearning/
 ├── model-ltsm-final.py                 # Skrip pelatihan Pre-Training & Fine-Tuning BiLSTM
 ├── model-ltsm-final.ipynb              # Notebook interaktif pelatihan model BiLSTM
 │
+├── analisis_data_atmosfer.ipynb        # Analisis tren iklim 20 tahun & validasi sensor vs AWS IoT
 ├── fine_tuning_pipeline.ipynb          # Pipeline fine-tuning domain adaptation satelit -> AWS
 ├── inference_pipeline.ipynb            # Pipeline inferensi terpadu & evaluasi benchmark 4 model
+├── CITATION.cff                        # Standar metadata sitasi repositori ilmiah
+├── .zenodo.json                        # Metadata integrasi pengarsipan otomatis Zenodo (DOI)
+├── LICENSE                             # Lisensi terbuka MIT
+├── CHANGELOG.md                        # Riwayat versi rilis ilmiah
+├── RELEASE_NOTES.md                    # Catatan rilis resmi v1.0.0
 │
 ├── results_xgboost/                    # Bobot model terlatih, kalibrator, & scaler XGBoost
 ├── results_lstm/                       # Bobot model terlatih, checkpoint keras, & scaler BiLSTM
@@ -161,8 +169,8 @@ Pada tahap regresi, *fine-tuning* menekan *false drizzle artifacts* dan memperba
 ### 1. Kloning & Persiapan Lingkungan
 ```bash
 # Kloning repositori dengan Git LFS
-git clone https://github.com/widhyatma/Rainfall_Satellite_DeepLearning.git
-cd Rainfall_Satellite_DeepLearning
+git clone https://github.com/widhyatma/Prediksi-Curah-Hujan-Jangka-Pendek-Jerukagung.git
+cd Prediksi-Curah-Hujan-Jangka-Pendek-Jerukagung
 git lfs pull
 
 # Pasang pustaka dependensi Python
@@ -192,6 +200,31 @@ python model-ltsm-final.py
 ```
 
 ---
+
+---
+
+## 📚 Sitasi & Cara Mengutip (Citation)
+
+Jika Anda menggunakan perangkat lunak, dataset, atau kerangka kerja pemodelan ini dalam penelitian Anda, silakan sitasi sebagai berikut:
+
+### Format BibTeX:
+```bibtex
+@software{widhyatma_2026_rainfall,
+  author       = {Evan Alif Widhyatma},
+  title        = {{Prediksi Curah Hujan Jangka Pendek Jerukagung: Two-Stage Hurdle Transfer Learning Framework for Hourly Precipitation Prediction}},
+  month        = sep,
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.XXXXXXX},
+  url          = {https://github.com/widhyatma/Prediksi-Curah-Hujan-Jangka-Pendek-Jerukagung}
+}
+```
+
+### Format APA:
+> Widhyatma, E. A. (2026). *Prediksi Curah Hujan Jangka Pendek Jerukagung: Two-Stage Hurdle Transfer Learning Framework for Hourly Precipitation Prediction* (Version v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+
+Metadata sitasi lengkap juga tersedia dalam format standar [CITATION.cff](CITATION.cff) dan [.zenodo.json](.zenodo.json).
 
 ## 📜 Lisensi & Atribusi
 
