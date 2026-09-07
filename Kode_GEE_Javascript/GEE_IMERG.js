@@ -11,7 +11,9 @@ var bandsToSelect = [
 ];
 var dataset = ee.ImageCollection('NASA/GPM_L3/IMERG_V07')
     .select(bandsToSelect)
-    .filterDate('2005-01-01', '2026-07-31');
+    // Rentang waktu penelitian: 1 Januari 2005 s/d 31 Desember 2025
+    // Batas akhir diset '2026-01-01' karena filterDate bersifat end-exclusive [start, end)
+    .filterDate('2005-01-01', '2026-01-01');
 
 // 3. EKSTRAKSI TIME SERIES
 var rainfall = dataset.map(function (img) {

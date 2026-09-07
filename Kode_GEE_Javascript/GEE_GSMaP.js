@@ -10,7 +10,9 @@ var dataset = ee.ImageCollection('JAXA/GPM_L3/GSMaP/v8/operational')
     'hourlyPrecipRate',
     'hourlyPrecipRateGC'
   ])
-  .filterDate('1998-01-01', '2026-07-31');
+  // Rentang waktu penelitian: 1 Januari 2005 s/d 31 Desember 2025
+  // Batas akhir diset '2026-01-01' karena filterDate bersifat end-exclusive [start, end)
+  .filterDate('2005-01-01', '2026-01-01');
 
 // TIME SERIES EXTRACTION
 var rainfall = dataset.map(function (img) {

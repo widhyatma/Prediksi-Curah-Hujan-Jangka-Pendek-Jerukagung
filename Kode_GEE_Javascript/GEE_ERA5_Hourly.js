@@ -21,7 +21,9 @@ var bandsToSelect = [
 ];
 
 var dataset = ee.ImageCollection('ECMWF/ERA5/HOURLY')
-  .filterDate('2005-01-01', '2025-05-31')
+    // Rentang waktu penelitian tesis: 1 Januari 2005 s/d 31 Desember 2025 (21 tahun kalender)
+  // Batas akhir diset '2026-01-01' karena filterDate bersifat end-exclusive [start, end)
+  .filterDate('2005-01-01', '2026-01-01')
   .select(bandsToSelect);
 
 // ======================================================
