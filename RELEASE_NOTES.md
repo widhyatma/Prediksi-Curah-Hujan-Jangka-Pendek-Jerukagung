@@ -5,6 +5,7 @@
 **Date:** September 7, 2026  
 **Repository:** [https://github.com/widhyatma/Prediksi-Curah-Hujan-Jangka-Pendek-Jerukagung](https://github.com/widhyatma/Prediksi-Curah-Hujan-Jangka-Pendek-Jerukagung)  
 **Author:** Evan Alif Widhyatma  
+**Affiliation:** Universitas Putra Bangsa  
 **License:** MIT License  
 **Zenodo DOI:** [10.5281/zenodo.22642472](https://doi.org/10.5281/zenodo.22642472)  
 
@@ -27,7 +28,7 @@ Tropical precipitation exhibits severe zero-inflation (>85% non-rain hours). Sta
 
 ### 2. Dual-Paradigm Benchmark
 - **Tree-Based:** Gradient Boosted Trees (XGBoost) optimized dynamically using Bayesian optimization via Optuna.
-- **Deep Learning:** BiDirectional LSTM capturing diurnal atmospheric cycles through a 24-hour temporal sliding window ($LOOKBACK = 24$).
+- **Deep Learning:** LSTM capturing diurnal atmospheric cycles through a 24-hour temporal sliding window ($LOOKBACK = 24$).
 
 ### 3. Satellite-to-Ground Domain Adaptation
 Pre-training on continuous multi-year satellite estimates (JAXA GSMaP NRT & Copernicus ERA5) provides robust macro-atmospheric feature representations. Fine-tuning on local AWS IoT telemetry (Stasiun Klimatologi Jerukagung, Kebumen) successfully adapts the models to micro-climatic terrain conditions, significantly boosting Precision and $R^2$ scores.

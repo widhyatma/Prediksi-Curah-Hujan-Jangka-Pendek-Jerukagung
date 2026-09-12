@@ -6,7 +6,7 @@ authors:
   - family-names: Widhyatma
     given-names: Evan Alif
     email: evanalifwidhyatma@gmail.com
-    affiliation: "Stasiun Klimatologi Jerukagung, Kebumen"
+    affiliation: "Universitas Putra Bangsa"
 version: 1.0.0
 doi: 10.5281/zenodo.22642472
 date-released: 2026-09-07
@@ -32,6 +32,6 @@ abstract: >-
   reanalysis (Copernicus ERA5) and satellite precipitation observations (JAXA GSMaP NRT and NASA GPM IMERG)
   with micro-scale ground truth telemetry from an automated AWS IoT weather station (Jerukagung, Kebumen,
   Central Java, Indonesia). The modeling pipeline features two complementary paradigms: an Optuna-optimized
-  Tree-based XGBoost model and a 24-hour diurnal-lookback BiDirectional LSTM deep learning network,
+  Tree-based XGBoost model and a 24-hour diurnal-lookback LSTM deep learning network,
   calibrated via isotonic regression and evaluated across comprehensive classification, regression,
   and cumulative water-balance metrics.
